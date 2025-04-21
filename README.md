@@ -3,8 +3,8 @@
 ## Установка  
 1. Клонировать репозиторий:  
    ```
-   git clone https://github.com/vsevolodkolganov/MVSA-Multi-Vulnerability-Static-Analyzer
-   cd MVSA-Multi-Vulnerability-Static-Analyzer
+   git clone https://github.com/Vses3va/mvsa
+   cd mvsa
    ```
 
 2. Установить зависимости:  
@@ -16,6 +16,7 @@
    ```bash
    python mvsa.py --code=app.py --report=report.json
    ```
+   app.py - проверяемый код
 
 2. Проверить отчет:  
    ```bash
