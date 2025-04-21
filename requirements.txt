@@ -1,0 +1,30 @@
+### Основные зависимости
+redis>=4.5.3
+pyyaml>=6.0.1
+esprima>=4.0.1
+python-json-logger>=2.0.7
+
+### Анализ кода и AST
+astunparse>=1.6.3
+libcst>=1.0.1
+
+### Распределенная обработка
+celery>=5.2.7
+kombu>=5.2.4
+kafka-python>=2.0.2
+
+### Инфраструктура и мониторинг
+python-kubernetes>=24.2.0
+prometheus-client>=0.16.0
+psutil>=5.9.5
+
+### Тестирование и качество кода
+pytest>=7.3.1
+pytest-cov>=4.0.0
+mypy>=1.3.0
+flake8>=6.0.0
+
+### Опциональные зависимости
+tensorflow-hub>=0.13.0
+uvicorn>=0.21.1
+fastapi>=0.95.1

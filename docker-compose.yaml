@@ -1,0 +1,12 @@
+  version: "3.8"
+  services:
+    mvsa:
+      build: .
+      volumes:
+        - .:/app
+      depends_on:
+        - redis
+    redis:
+      image: redis:7.2
+      ports:
+        - "6379:6379"

@@ -1,0 +1,40 @@
+# Основные настройки анализатора
+app:
+  environment: production  # development|staging|production
+  log_level: INFO
+  report_path: ./reports
+  max_file_size: 10485760  # 10MB
+
+# Настройки кеширования
+redis:
+  host: redis-service
+  port: 6379
+  cache_ttl: 3600
+  ast_cache_enabled: true
+
+# Поддерживаемые языки
+languages:
+  - python
+  - javascript
+
+# Активные детекторы
+vulnerabilities:
+  - sqli
+  - xss
+  - csrf
+  - ssrf
+  - command_injection
+  - insecure_auth
+  
+# Настройки ML-моделей
+ml:
+  model_path: /models/tf_model
+  min_confidence: 0.85
+  quantize_for_cpu: true
+  onnx_enabled: true
+
+# Настройки распределенной обработки
+celery:
+  broker_url: pyamqp://user:pass@rabbitmq:5672//
+  result_backend: redis://redis-service:6379/0
+  worker_concurrency: 4
